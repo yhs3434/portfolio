@@ -1,21 +1,15 @@
 import React from 'react';
 import "./MenuList.css";
 
-import { useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function MenuList(props) {
-    let history = useHistory();
-
-    function menuItemClick(e) {
-        const curItem = e.target.dataset.value;
-        history.push(curItem);
-    }
-
     return(
-        <ul id="menulist">
-            <li data-value="home" onClick={menuItemClick}>홈</li>
-            <li data-value="board" onClick={menuItemClick}>게시판</li>
-            <li data-value="customercenter" onClick={menuItemClick}>문의</li>
+        <ul className="ul_main_1">
+            <li className="li_main_1"><Link to="/">홈</Link></li>
+            <li className="li_main_1"><Link to="/about">이력</Link></li>
+            <li className="li_main_1"><Link to="/diary">일기장</Link></li>
+            <li className="li_main_1"><Link to="/customercenter">문의</Link></li>
         </ul>
     )
 }

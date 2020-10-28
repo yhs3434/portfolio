@@ -1,0 +1,32 @@
+.div_wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+#body_1 {
+
+}
+
+#header_1 {
+    background-color: green;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#footer_1 {
+    height: 10vh;
+    margin-top: auto;
+    background-color: yellow;
+}
+
+#nav_1 {
+    width: 100px;
+}
+
+#nav_section_split_1 {
+    display: flex;
+    flex-direction: row;
+    min-height: 80vh;
+}

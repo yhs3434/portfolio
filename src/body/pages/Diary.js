@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function Board() {
+export default function Diary() {
     return(
         <div>
-            board
+            diary
         </div>
     )
 }
