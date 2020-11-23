@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch, Route, Link, useRouteMatch, useParams } from 'react-router-dom';
 import { Home, About, Diary, CustomerCenter } from './pages';
 
-export default function Body() {
+export default function Main() {
     return(
         <Switch>
             <Route path="/about">
