@@ -1,0 +1,113 @@
+.app-main-about {
+    display: flex;
+    flex-direction: row;
+}
+
+.app-main-about-left {
+    flex: 0 0 auto;
+    width: 200px;
+}
+
+.app-main-about-left-nav {
+    display: block;
+    position: sticky;
+    top: 15px;
+}
+
+.app-main-about-left-nav-ul {
+    line-height: 35px;
+}
+
+.app-main-about-left-nav-ul-li-span {
+    cursor: pointer;
+}
+
+.app-main-about-left-nav-ul-li-ul {
+    display: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.tab-active {
+    display: block;
+    animation-name: fadein;
+    animation-duration: 1s;
+}
+
+
+.app-main-about-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-main-about-right-div {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    border: 1px solid rgb(124, 124, 124);
+    margin: 10px 15px;
+    padding: 10px 20px;
+}
+
+.app-main-about-right-div-p-img {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.github-icon {
+    margin: 0;
+    width: 30px;
+}
+
+.github-icon:hover {
+    margin: -2px;
+    width: 34px;
+}
+
+.github-icon:active {
+    margin: 2px;
+    width: 26px;
+}
+
+.instagram-icon {
+    margin: 0;
+    width: 40px;
+}
+
+.instagram-icon:hover {
+    margin: -2px;
+    width: 44px;
+}
+
+.instagram-icon:active {
+    margin: 2px;
+    width: 36px;
+}
+
+.app-main-about-right-div-title {
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+}
+
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slidein {
+    from {
+        margin-bottom: 100%;
+    }
+    to {
+        margin-bottom: 0%;
+    }
+}

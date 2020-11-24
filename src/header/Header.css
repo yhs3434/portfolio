@@ -1,0 +1,9 @@
+.app-header-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-header-up {
+    display: flex;
+    flex-direction: row;
+}

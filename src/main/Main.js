@@ -1,6 +1,6 @@
 import React from 'react';
 import { Switch, Route, Link, useRouteMatch, useParams } from 'react-router-dom';
-import { Home, About, Diary, CustomerCenter } from './pages';
+import { Home, About, Diary, CustomerCenter, License } from './pages';
 
 export default function Main() {
     return(
@@ -14,7 +14,10 @@ export default function Main() {
             <Route path="/customercenter">
                 <CustomerCenter />
             </Route>
-            <Route path="/">
+            <Route path="/license">
+                <License />
+            </Route>
+            <Route exact path="/">
                 <Home />
             </Route>
         </Switch>

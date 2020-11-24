@@ -1,3 +1,44 @@
 body {
     margin: 0;
 }
+
+a:link {
+    color:black;
+    text-decoration:none;
+}
+
+a:visited {
+    color:black;
+    text-decoration:none;
+}
+
+a:hover {
+    color:black;
+    text-decoration:none;
+}
+
+a:active {
+    color:black;
+    text-decoration:none;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.button-rubber {
+    margin: 4px 8px;
+    font-size: 14px;
+}
+
+.button-rubber:hover {
+    margin: 2.22px 6.22px;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.button-rubber:active {
+    margin: 5.45px 9.45px;
+    font-size: 12px;
+}
