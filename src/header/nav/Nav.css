@@ -5,3 +5,13 @@
 .app-header-nav-ul-li {
     float: left;
 }
+
+.app-header-nav-ul-li::before {
+    margin-left: 20px;
+    content: '';
+}
+
+.app-header-nav-ul-li:first-child::before {
+    margin-left: 0;
+    content: '';
+}

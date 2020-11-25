@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
 }
@@ -41,4 +45,8 @@ ul {
 .button-rubber:active {
     margin: 5.45px 9.45px;
     font-size: 12px;
+}
+
+.space-vertical {
+    height: 40px;
 }
