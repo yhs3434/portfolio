@@ -1,0 +1,12 @@
+.app-main-customercenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 220px);
+}
+
+.app-main-customercenter-div {
+    padding: 60px 50px;
+    border: 1px solid rgb(180, 180, 200);
+    line-height: 35px;
+}

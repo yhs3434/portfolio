@@ -9,7 +9,8 @@
 .app-header {
     flex: 0;
     border-bottom: 1px solid rgb(211, 211, 211);
-    padding: 5px 10px;
+    padding: 10px 10px;
+    z-index: 20;
 }
 
 .app-main {
@@ -20,5 +21,11 @@
 .app-footer {
     flex: 0;
     border-top: 1px solid rgb(211, 211, 211);
-    padding: 20px 10px;
+    background-color: rgb(245, 245, 245);
+}
+
+@media (max-width: 768px) {
+    .app-main {
+        font-size: 14px;
+    }
 }

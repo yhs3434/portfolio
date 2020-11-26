@@ -1,0 +1,27 @@
+.app-main-home {
+    min-height: calc(100vh - 180px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-main-home-button {
+    cursor: pointer;
+}
+
+.app-main-home-image {
+    display: none;
+    width: 80%;
+    animation-name: fadein;
+    animation-duration: 10s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

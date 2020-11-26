@@ -1,0 +1,11 @@
+.app-main-diary-total {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 162px);
+}
+
+.app-main-diary-div-title {
+    font-size: 20px;
+    font-weight: bold;
+}

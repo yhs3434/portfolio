@@ -8,6 +8,7 @@
     width: 200px;
 }
 
+
 .app-main-about-left-nav {
     display: block;
     position: sticky;
@@ -36,8 +37,53 @@
 
 .app-main-about-left-nav-div {
     border: 1px solid rgb(200, 200, 200);
-    display: block;
+    display: flex;
+    flex-direction: column;
     padding: 40px 10px;
+    margin-right: 20px;
+    line-height: 60px;
+}
+
+.app-main-about-left-nav-div-name {
+    margin: 0 auto;
+}
+
+.app-main-about-left-nav-div-name-first {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.app-main-about-left-nav-div-name-last {
+    font-size: 12px;
+}
+
+.app-main-about-left-nav-div-search {
+    display: flex;
+    border: 1px solid #dfe1e5;
+    border-radius: 20px;
+    padding: 5px 12px;
+    color: gray;
+}
+
+.app-main-about-left-nav-div-search:hover {
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-color: rgba(223,225,229,0);
+}
+
+.app-main-about-left-nav-div-search-input {
+    width: 90%;
+    border: none;
+    background-color: transparent;
+}
+
+.app-main-about-left-nav-div-search-input:focus {
+    outline: none;
+}
+
+
+.app-main-about-left-nav-div-search-img {
+    cursor: pointer;
+    width: 15px;
 }
 
 .about-tab-init {
@@ -45,14 +91,18 @@
 }
 
 .about-tab-appear {
-    animation: fadein 2s;
+    animation: fadein 1.5s;
     animation-fill-mode: forwards;
     display: flex;
 }
 
 .about-tab-disappear {
-    animation: fadeout 2s;
+    animation: fadeout 1.5s;
     animation-fill-mode: forwards;
+}
+
+.about-tab-disappear2 {
+    display: none;
 }
 
 .app-main-about-right {
@@ -69,9 +119,14 @@
     justify-content: center;
     position: relative;
     border: 1px solid rgb(124, 124, 124);
-    margin: 10px 15px;
-    padding: 150px 20px 40px 20px;
+    margin: 10px 0px;
+    padding: 150px 15px 40px 15px;
     scroll-snap-align: start;
+    line-height: 35px;
+}
+
+.app-main-about-right-div-div-div {
+    margin-left: 15px;
 }
 
 .app-main-about-right-div-p-img {
@@ -80,17 +135,17 @@
 }
 
 .github-icon {
-    margin: 0;
+    margin: 0 5px;
     width: 30px;
 }
 
 .github-icon:hover {
-    margin: -2px;
+    margin: -2px 3px;
     width: 34px;
 }
 
 .github-icon:active {
-    margin: 2px;
+    margin: 2px 7px;
     width: 26px;
 }
 
@@ -115,6 +170,31 @@
     top: 10px;
 }
 
+.career-li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.app-main-about-hide {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px 0;
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-color: rgba(223,225,229,0);
+}
+
+.app-main-about-hide-ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.app-main-about-hide-li {
+    display: list-item;
+}
 
 @keyframes fadein {
     from {
@@ -140,5 +220,28 @@
     }
     to {
         margin-bottom: 0%;
+    }
+}
+
+@media (max-width: 768px) {
+    .app-main-about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .app-main-about-left {
+        display: none;
+    }
+    
+    .career-li {
+        flex-direction: column;
+        font-size: 14px;
+        margin: 20px 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .app-main-about-hide {
+        display: none;
     }
 }
