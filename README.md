@@ -1,1 +1,1 @@
-목요일까지 완성함 ㅋ
+https://yhs3434.github.io/portfolio/
