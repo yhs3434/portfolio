@@ -39,7 +39,9 @@ export default function Home(props) {
 
     return(
         <div className="app-main-home">
-            <span className="app-main-home-button" id="app-main-button-00" onClick={startClicked}>삶과 죽음</span>
+            <span className="app-main-home-button" id="app-main-button-00" onClick={startClicked}>
+                <span>삶</span>과 <span>죽음</span>
+            </span>
             <img src={brainImage} className="app-main-home-image" id="app-main-image-00"/>
         </div>
     )

@@ -307,7 +307,7 @@ export default function About() {
                             <span>Software Engineering</span>
                         </div>
                         <div style={{display: 'flex', flexDirection: 'column'}}>
-                            <span style={{marginTop: "20px"}}>2013.03 ~ 2020.08</span>
+                            <span style={{marginTop: "20px", color: 'gray'}}>2013.03 ~ 2020.08</span>
                         </div>
                     </div>
                     <div className="space-vertical" style={{height: '40px'}}/>
@@ -320,7 +320,7 @@ export default function About() {
                             <span>Math / Science</span>
                         </div>
                         <div style={{display: 'flex', flexDirection: 'column'}}>
-                            <span style={{marginTop: "20px"}}>2009.03 ~ 2012.02</span>
+                            <span style={{marginTop: "20px", color: 'gray'}}>2009.03 ~ 2012.02</span>
                         </div>
                     </div>
                 </div>
@@ -335,11 +335,11 @@ export default function About() {
                     <div id="about-tab-02-00">
                         <h3>Major</h3>
                         <div className="app-main-about-right-div-div-div">
-                            <h4>front end</h4>
+                            <h4>frontend</h4>
                             PWA, HTML5, CSS3, JAVASCRIPT (es6 이전, 이후 모두 가능), React, Vue
                         </div>
                         <div className="app-main-about-right-div-div-div">
-                            <h4>back end</h4>
+                            <h4>backend</h4>
                             Websocket (ws protocol) with nodejs
                         </div>
                     </div>
@@ -347,11 +347,11 @@ export default function About() {
                     <div id="about-tab-02-01">
                         <h3>Minor</h3>
                         <div className="app-main-about-right-div-div-div">
-                            <h4>front end</h4>
+                            <h4>frontend</h4>
                             Android (Java), jQuery
                         </div>
                         <div className="app-main-about-right-div-div-div">
-                            <h4>back end</h4>
+                            <h4>backend</h4>
                             Django, Flask, Express, Koa, PHP
                         </div>
                     </div>
@@ -483,25 +483,25 @@ export default function About() {
                         <div>
                             <h4>long time</h4>
                             <ul>
-                                <li className="career-li"><span>everland attraction 눈썰매장</span> <span>(2011.11 ~ 2011.12)</span></li>
-                                <li className="career-li"><span>KRA 한국 마사회 질서유지</span> <span>(2012.01 ~ 2013.01)</span></li>
-                                <li className="career-li"><span>GS25</span> <span>(2012.03 ~ 2013.01)</span></li>
-                                <li className="career-li"><span>everland Holland Village 주방보조</span> <span>(2013.01 ~ 2013.04)</span></li>
-                                <li className="career-li"><span>CU</span> <span>(2016.01 ~ 2017.07)</span></li>
-                                <li className="career-li"><span>TGI Friday 홀서빙</span> <span>(2017.09 ~ 2018.03)</span></li>
-                                <li className="career-li"><span>단국대 정보기획팀 포털 사이트 관리</span> <span>(2018.03 ~ 2018.08)</span></li>
-                                <li className="career-li"><span>단국대 삼성전자 A/S 센터 교내 근로</span> <span>(2018.09 ~ 2019.02)</span></li>
-                                <li className="career-li"><span>(주)나비온 교외 근로</span> <span>(2019.03 ~ 2019.07)</span></li>
-                                <li className="career-li"><span>카카오 대리운전 기사</span> <span>(2019.12 ~ 2020.02)</span></li>
+                                <li className="career-li"><span>everland attraction 눈썰매장</span> <span className="career-li-date">2012.11 ~ 2012.12</span></li>
+                                <li className="career-li"><span>KRA 한국 마사회 질서유지</span> <span className="career-li-date">2013.01 ~ 2014.01</span></li>
+                                <li className="career-li"><span>GS25</span> <span className="career-li-date">2013.03 ~ 2014.01</span></li>
+                                <li className="career-li"><span>everland Holland Village 주방보조</span> <span className="career-li-date">2014.01 ~ 2014.04</span></li>
+                                <li className="career-li"><span>CU</span> <span className="career-li-date">2016.01 ~ 2017.07</span></li>
+                                <li className="career-li"><span>TGI Friday 홀서빙</span> <span className="career-li-date">2017.09 ~ 2018.03</span></li>
+                                <li className="career-li"><span>단국대 정보기획팀 포털 사이트 관리</span> <span className="career-li-date">2018.03 ~ 2018.08</span></li>
+                                <li className="career-li"><span>단국대 삼성전자 A/S 센터 교내 근로</span> <span className="career-li-date">2018.09 ~ 2019.02</span></li>
+                                <li className="career-li"><span>(주)나비온 교외 근로</span> <span className="career-li-date">2019.03 ~ 2019.07</span></li>
+                                <li className="career-li"><span>카카오 대리운전 기사</span> <span className="career-li-date">2019.12 ~ 2020.02</span></li>
                             </ul>
                         </div>
                         <div>
-                            <h4>shor time</h4>
+                            <h4>short time</h4>
                             <ul>
-                                <li className="career-li"><span>신선 제품 상하차</span> <span>(2016.08)</span></li>
-                                <li className="career-li"><span>좋은데이 공병 분류</span> <span>(2017.07)</span></li>
-                                <li className="career-li"><span>단국대 대학원 입학처 개발</span> <span>(2019.03~05)</span></li>
-                                <li className="career-li"><span>파워리빙센터 주차 요원</span> <span>(2020.05)</span></li>
+                                <li className="career-li"><span>신선 제품 상하차</span> <span className="career-li-date">2016.08</span></li>
+                                <li className="career-li"><span>좋은데이 공병 분류</span> <span className="career-li-date">2017.07</span></li>
+                                <li className="career-li"><span>단국대 대학원 입학처 개발</span> <span className="career-li-date">2019.03~05</span></li>
+                                <li className="career-li"><span>파워리빙센터 주차 요원</span> <span className="career-li-date">2020.05</span></li>
                             </ul>
                         </div>
                     </div>
