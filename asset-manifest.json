@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.14cf8dd6.chunk.css",
+    "main.js": "/portfolio/static/js/main.f12d7a7c.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.f12d7a7c.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
+    "static/js/2.fc064e12.chunk.js": "/portfolio/static/js/2.fc064e12.chunk.js",
+    "static/js/2.fc064e12.chunk.js.map": "/portfolio/static/js/2.fc064e12.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.507102a7c6b5e4653f767a640b41ad89.js": "/portfolio/precache-manifest.507102a7c6b5e4653f767a640b41ad89.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.14cf8dd6.chunk.css.map": "/portfolio/static/css/main.14cf8dd6.chunk.css.map",
+    "static/js/2.fc064e12.chunk.js.LICENSE.txt": "/portfolio/static/js/2.fc064e12.chunk.js.LICENSE.txt",
+    "static/media/brain.jpg": "/portfolio/static/media/brain.25fb459f.jpg",
+    "static/media/chrome_reader_mode.svg": "/portfolio/static/media/chrome_reader_mode.1bbb79ec.svg",
+    "static/media/face.svg": "/portfolio/static/media/face.9252906e.svg",
+    "static/media/github.png": "/portfolio/static/media/github.e537824b.png",
+    "static/media/instagram.png": "/portfolio/static/media/instagram.774d88f0.png",
+    "static/media/monochrome_photos.svg": "/portfolio/static/media/monochrome_photos.953ce18a.svg",
+    "static/media/search.svg": "/portfolio/static/media/search.db5d8122.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.209c2d7e.js",
+    "static/js/2.fc064e12.chunk.js",
+    "static/css/main.14cf8dd6.chunk.css",
+    "static/js/main.f12d7a7c.chunk.js"
+  ]
+}
