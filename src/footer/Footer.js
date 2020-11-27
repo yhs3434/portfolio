@@ -16,15 +16,15 @@ export default function Footer() {
     return(
         <div className="app-footer-total">
             <div className="app-footer-left">
-                <Link to="/">
+                <Link to="/" class="button-rubber">
                     <span className="app-footer-left-first">HANSOL</span>
                     <span className="app-footer-left-last">YOON</span>
                 </Link>
             </div>
             <div className="app-footer-right">
                 <div className="app-footer-right-big">
-                    <Link to="/customercenter" className="button-rubber">문의</Link>
-                    <Link to="/license" className="button-rubber">오픈소스 라이선스</Link>
+                    <Link to="/customercenter" className="app-footer-right-small-icon button-rubber">문의</Link>
+                    <Link to="/license" className="app-footer-right-small-icon button-rubber">오픈소스 라이선스</Link>
                 </div>
                 <div className="app-footer-right-small">
                     <img

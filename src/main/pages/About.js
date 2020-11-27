@@ -108,19 +108,23 @@ export default function About() {
     useEffect(() => {
         if (isOffsets === true) {
             window.addEventListener('scroll', scrollEvent);
-            return () => {
-                window.removeEventListener('scroll', scrollEvent);
-        }
+            return () => window.removeEventListener('scroll', scrollEvent);
         }
     }, [isOffsets])
 
     useEffect(() => {
         const parent = document.getElementById('app-main-about-left-nav-ul-0');
+        const parent2 = document.getElementById('about-hide-00');
+        console.log(parent2);
         for (let i = 0; i < parent.children.length; i++) {
-            parent.children[i].children[1].className = parent.children[i].children[1].className.replace(' tab-active', '')
+            parent.children[i].children[1].className = parent.children[i].children[1].className.replace(' tab-active', '');
+            parent.children[i].children[0].className = parent.children[i].children[0].className.replace(' tab-active-title', '');
+            parent2.children[0].children[i].className = parent2.children[0].children[i].className.replace(' tab-active-title', '');
         }
         if (curTab < 0) return;
-        parent.children[curTab].children[1].className += ' tab-active'
+        parent.children[curTab].children[1].className += ' tab-active';
+        parent.children[curTab].children[0].className += ' tab-active-title';
+        parent2.children[0].children[curTab].className += ' tab-active-title';
     }, [curTab])
 
     return(
@@ -443,7 +447,6 @@ export default function About() {
                         </div>
                     </div>
                 </div>
-                <div className="space-vertical" />
                 <div
                     id="about-tab-04"
                     className="app-main-about-right-div"
@@ -546,32 +549,32 @@ export default function About() {
 
             <div className="app-main-about-hide about-tab-init" id="about-hide-00">
                 <ul className="app-main-about-hide-ul">
-                    <li className="app-main-about-hide-ul-li">
+                    <li className="app-main-about-hide-ul-li button-rubber">
                         <a href="#about-tab-00">
                             About
                         </a>
                     </li>
-                    <li className="app-main-about-hide-ul-li">
+                    <li className="app-main-about-hide-ul-li button-rubber">
                         <a href="#about-tab-01">
                             Edu
                         </a>
                     </li>
-                    <li className="app-main-about-hide-ul-li">
+                    <li className="app-main-about-hide-ul-li button-rubber">
                         <a href="#about-tab-02">
                             Skill
                         </a>
                     </li>
-                    <li className="app-main-about-hide-ul-li">
+                    <li className="app-main-about-hide-ul-li button-rubber">
                         <a href="#about-tab-03">
                             Project
                         </a>
                     </li>
-                    <li className="app-main-about-hide-ul-li">
+                    <li className="app-main-about-hide-ul-li button-rubber">
                         <a href="#about-tab-04">
                             Interest
                         </a>
                     </li>
-                    <li className="app-main-about-hide-ul-li">
+                    <li className="app-main-about-hide-ul-li button-rubber">
                         <a href="#about-tab-05">
                             Career
                         </a>
