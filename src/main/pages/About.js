@@ -389,26 +389,49 @@ export default function About() {
                         <div>
                             <h4>Suroom</h4>
                             <div className="app-main-about-right-div-div-div">
-                                member: Yoon han sol(Leader), Park hong je, Lee dong gon<br/><br/>
-                                description: null<br/><br/>
-                                link: <a href="https://github.com/LinkedPlusPlus/Suroom" target="_blank">here</a>
+                                member: Yoon han sol(Leader), Park hong je, Lee dong gon<br/>
+                                using stack : django, android<br/>
+                                short desc : 같은 취미를 가진 학생들의 모바일 학습 공간<br/>
+                                <span className="app-main-about-right-div-div-div-span">
+                                    <span>link : </span>
+                                    <a href="https://github.com/LinkedPlusPlus/Suroom" target="_blank">source code</a>
+                                    <span>, </span>
+                                    <a href="https://github.com/yhs3434/record/tree/master/portfolio/suroom" target="_blank">simple engineering</a>
+                                    <span>, </span>
+                                    <a href="https://www.youtube.com/watch?v=oZTlpe2u0iE&t=28s" target="_blank">performance</a>
+                                </span>
                             </div>
-                            
                         </div>
+                        <div className="space-vertical" />
                         <div>
                             <h4>Smart Career</h4>
                             <div className="app-main-about-right-div-div-div">
-                                member: Yoon han sol(Leader), Lee yoo chan, Jung jin man, Han sang il<br/><br/>
-                                description: null<br/><br/>
-                                link: <a href="https://github.com/ZeroBack0100" target="_blank">here</a>
+                                member: Yoon han sol(Leader), Lee yoo chan, Jung jin man, Han sang il<br/>
+                                using stack : django, arduino, raspberry pi<br/>
+                                short desc : 자동으로 사람을 따라다니는 여행용 가방<br/>
+                                <span className="app-main-about-right-div-div-div-span">
+                                    <span>link : </span>
+                                    <a href="https://github.com/ZeroBack0100" target="_blank">source code</a>
+                                    <span>, </span>
+                                    <a href="https://github.com/yhs3434/record/tree/master/portfolio/smart%20career" target="_blank">simple engineering</a>
+                                    <span>, </span>
+                                    <a href="https://www.youtube.com/watch?v=DexRRdvs3q4" target="_blank">performance</a>
+                                </span>
                             </div>
                         </div>
+                        <div className="space-vertical" />
                         <div>
                             <h4>Medical system for using blockchain</h4>
                             <div  className="app-main-about-right-div-div-div">
-                                member : Han su young(Leader), Kim je hyoung, Park si hwan, Yoon han sol<br/><br/>
-                                description: null<br/><br/>
-                                link: <a href="https://github.com/hermes-dku/project" target="_blank">here</a>
+                                member : Han su young(Leader), Kim je hyoung, Park si hwan, Yoon han sol<br/>
+                                using stack : express, html, css, solidity<br/>
+                                short desc : 환자 중심의 병원간 의료 기록 통합 시스템<br/>
+                                <span className="app-main-about-right-div-div-div-span">
+                                    <span>link : </span>
+                                    <a href="https://github.com/hermes-dku/project" target="_blank">source code</a>
+                                    <span>, </span>
+                                    <a href="https://github.com/yhs3434/record/tree/master/portfolio/medical%20system" target="_blank">simple engineering</a>
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -420,7 +443,7 @@ export default function About() {
                         </div>
                     </div>
                 </div>
-
+                <div className="space-vertical" />
                 <div
                     id="about-tab-04"
                     className="app-main-about-right-div"

@@ -129,6 +129,11 @@
     margin-left: 15px;
 }
 
+.app-main-about-right-div-div-div-span {
+    font-weight: bold;
+    color: blue;
+}
+
 .app-main-about-right-div-p-img {
     cursor: pointer;
     transition: 0.2s;
