@@ -51,3 +51,7 @@ ul {
 .space-vertical {
     height: 40px;
 }
+
+.app-link {
+    text-decoration: underline;
+}

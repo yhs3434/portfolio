@@ -394,11 +394,11 @@ export default function About() {
                                 short desc : 같은 취미를 가진 학생들의 모바일 학습 공간<br/>
                                 <span className="app-main-about-right-div-div-div-span">
                                     <span>link : </span>
-                                    <a href="https://github.com/LinkedPlusPlus/Suroom" target="_blank">source code</a>
+                                    <a href="https://github.com/LinkedPlusPlus/Suroom" target="_blank" style={{textDecoration: 'underline'}}>source code</a>
                                     <span>, </span>
-                                    <a href="https://github.com/yhs3434/record/tree/master/portfolio/suroom" target="_blank">simple engineering</a>
+                                    <a href="https://github.com/yhs3434/record/tree/master/portfolio/suroom" target="_blank" style={{textDecoration: 'underline'}}>simple engineering</a>
                                     <span>, </span>
-                                    <a href="https://www.youtube.com/watch?v=oZTlpe2u0iE&t=28s" target="_blank">performance</a>
+                                    <a href="https://www.youtube.com/watch?v=oZTlpe2u0iE&t=28s" target="_blank" style={{textDecoration: 'underline'}}>performance</a>
                                 </span>
                             </div>
                         </div>
@@ -411,11 +411,11 @@ export default function About() {
                                 short desc : 자동으로 사람을 따라다니는 여행용 가방<br/>
                                 <span className="app-main-about-right-div-div-div-span">
                                     <span>link : </span>
-                                    <a href="https://github.com/ZeroBack0100" target="_blank">source code</a>
+                                    <a href="https://github.com/ZeroBack0100" target="_blank" style={{textDecoration: 'underline'}}>source code</a>
                                     <span>, </span>
-                                    <a href="https://github.com/yhs3434/record/tree/master/portfolio/smart%20career" target="_blank">simple engineering</a>
+                                    <a href="https://github.com/yhs3434/record/tree/master/portfolio/smart%20career" target="_blank" style={{textDecoration: 'underline'}}>simple engineering</a>
                                     <span>, </span>
-                                    <a href="https://www.youtube.com/watch?v=DexRRdvs3q4" target="_blank">performance</a>
+                                    <a href="https://www.youtube.com/watch?v=DexRRdvs3q4" target="_blank" style={{textDecoration: 'underline'}}>performance</a>
                                 </span>
                             </div>
                         </div>
@@ -428,9 +428,9 @@ export default function About() {
                                 short desc : 환자 중심의 병원간 의료 기록 통합 시스템<br/>
                                 <span className="app-main-about-right-div-div-div-span">
                                     <span>link : </span>
-                                    <a href="https://github.com/hermes-dku/project" target="_blank">source code</a>
+                                    <a href="https://github.com/hermes-dku/project" target="_blank" style={{textDecoration: 'underline'}}>source code</a>
                                     <span>, </span>
-                                    <a href="https://github.com/yhs3434/record/tree/master/portfolio/medical%20system" target="_blank">simple engineering</a>
+                                    <a href="https://github.com/yhs3434/record/tree/master/portfolio/medical%20system" target="_blank" style={{textDecoration: 'underline'}}>simple engineering</a>
                                 </span>
                             </div>
                         </div>
@@ -468,11 +468,18 @@ export default function About() {
                         <li id="about-tab-04-02">
                             <dl>
                                 <dt>progressive <span style={{fontWeight: 'bold'}}>web</span> app</dt>
-                                <dd><a href="https://yhs3434.github.io/yt_deploy/" target="_blank">Your think</a></dd>
+                                <dd>
+                                    <a href="https://yhs3434.github.io/yt_deploy/" target="_blank" style={{textDecoration: 'underline',}}>Your think</a>
+                                    <span> (</span>
+                                    <a href="https://github.com/yhs3434/YourThink/tree/master/web" target="_blank" style={{color: 'blue', textDecoration: 'underline',}}>client</a>
+                                    <span>, </span>
+                                    <a href="https://github.com/yhs3434/YourThink/tree/master/server_socket" target="_blank" style={{color: 'blue', textDecoration: 'underline',}}>server</a>
+                                    <span>)</span>
+                                </dd>
                                 <dd>durumi (
-                                    <a href="https://github.com/yhs3434/durumi_client" target="_blank">client</a>
+                                    <a href="https://github.com/yhs3434/durumi_client" target="_blank" style={{color: 'blue', textDecoration: 'underline',}}>client</a>
                                     <span>, </span> 
-                                    <a href="https://github.com/yhs3434/durumi_server" target="_blank">server</a>)
+                                    <a href="https://github.com/yhs3434/durumi_server" target="_blank" style={{color: 'blue', textDecoration: 'underline',}}>server</a>)
                                 </dd>
                             </dl>
                         </li>
