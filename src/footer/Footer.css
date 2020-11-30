@@ -13,19 +13,16 @@
 }
 
 .app-footer-right-small-icon {
-    width: 25px;
-    margin: 0 10px;
     cursor: pointer;
+    margin: 0 10px;
 }
 
 .app-footer-right-small-icon:hover {
-    width: 34px;
-    margin: -2px;
+
 }
 
 .app-footer-right-small-icon:active {
-    width: 26px;
-    margin: 2px;
+
 }
 
 @media (min-width: 768px) {

@@ -21,6 +21,7 @@
 
 .app-main-about-left-nav-ul-li-span {
     cursor: pointer;
+    padding: 3px 0;
 }
 
 .app-main-about-left-nav-ul-li-ul {
@@ -33,6 +34,11 @@
     display: block;
     animation-name: fadein;
     animation-duration: 1s;
+}
+
+.tab-active-title {
+    transition: 0s;
+    border-bottom: 3px solid #dfe1e5;
 }
 
 .app-main-about-left-nav-div {
@@ -129,6 +135,10 @@
     margin-left: 15px;
 }
 
+.app-main-about-right-div-div-div-span {
+    color: blue;
+}
+
 .app-main-about-right-div-p-img {
     cursor: pointer;
     transition: 0.2s;
@@ -196,8 +206,9 @@
     justify-content: space-around;
 }
 
-.app-main-about-hide-li {
+.app-main-about-hide-ul-li {
     display: list-item;
+    padding: 4px 0;
 }
 
 @keyframes fadein {

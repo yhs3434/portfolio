@@ -108,19 +108,23 @@ export default function About() {
     useEffect(() => {
         if (isOffsets === true) {
             window.addEventListener('scroll', scrollEvent);
-            return () => {
-                window.removeEventListener('scroll', scrollEvent);
-        }
+            return () => window.removeEventListener('scroll', scrollEvent);
         }
     }, [isOffsets])
 
     useEffect(() => {
         const parent = document.getElementById('app-main-about-left-nav-ul-0');
+        const parent2 = document.getElementById('about-hide-00');
+        console.log(parent2);
         for (let i = 0; i < parent.children.length; i++) {
-            parent.children[i].children[1].className = parent.children[i].children[1].className.replace(' tab-active', '')
+            parent.children[i].children[1].className = parent.children[i].children[1].className.replace(' tab-active', '');
+            parent.children[i].children[0].className = parent.children[i].children[0].className.replace(' tab-active-title', '');
+            parent2.children[0].children[i].className = parent2.children[0].children[i].className.replace(' tab-active-title', '');
         }
         if (curTab < 0) return;
-        parent.children[curTab].children[1].className += ' tab-active'
+        parent.children[curTab].children[1].className += ' tab-active';
+        parent.children[curTab].children[0].className += ' tab-active-title';
+        parent2.children[0].children[curTab].className += ' tab-active-title';
     }, [curTab])
 
     return(
@@ -389,26 +393,49 @@ export default function About() {
                         <div>
                             <h4>Suroom</h4>
                             <div className="app-main-about-right-div-div-div">
-                                member: Yoon han sol(Leader), Park hong je, Lee dong gon<br/><br/>
-                                description: null<br/><br/>
-                                link: <a href="https://github.com/LinkedPlusPlus/Suroom" target="_blank">here</a>
+                                member: Yoon han sol(Leader), Park hong je, Lee dong gon<br/>
+                                using stack : django, android<br/>
+                                short desc : 같은 취미를 가진 학생들의 모바일 학습 공간<br/>
+                                <span className="app-main-about-right-div-div-div-span">
+                                    <span>link : </span>
+                                    <a href="https://github.com/LinkedPlusPlus/Suroom" target="_blank" style={{textDecoration: 'underline'}}>source code</a>
+                                    <span>, </span>
+                                    <a href="https://github.com/yhs3434/record/tree/master/portfolio/suroom" target="_blank" style={{textDecoration: 'underline'}}>simple engineering</a>
+                                    <span>, </span>
+                                    <a href="https://www.youtube.com/watch?v=oZTlpe2u0iE&t=28s" target="_blank" style={{textDecoration: 'underline'}}>performance</a>
+                                </span>
                             </div>
-                            
                         </div>
+                        <div className="space-vertical" />
                         <div>
                             <h4>Smart Career</h4>
                             <div className="app-main-about-right-div-div-div">
-                                member: Yoon han sol(Leader), Lee yoo chan, Jung jin man, Han sang il<br/><br/>
-                                description: null<br/><br/>
-                                link: <a href="https://github.com/ZeroBack0100" target="_blank">here</a>
+                                member: Yoon han sol(Leader), Lee yoo chan, Jung jin man, Han sang il<br/>
+                                using stack : django, arduino, raspberry pi<br/>
+                                short desc : 자동으로 사람을 따라다니는 여행용 가방<br/>
+                                <span className="app-main-about-right-div-div-div-span">
+                                    <span>link : </span>
+                                    <a href="https://github.com/ZeroBack0100" target="_blank" style={{textDecoration: 'underline'}}>source code</a>
+                                    <span>, </span>
+                                    <a href="https://github.com/yhs3434/record/tree/master/portfolio/smart%20career" target="_blank" style={{textDecoration: 'underline'}}>simple engineering</a>
+                                    <span>, </span>
+                                    <a href="https://www.youtube.com/watch?v=DexRRdvs3q4" target="_blank" style={{textDecoration: 'underline'}}>performance</a>
+                                </span>
                             </div>
                         </div>
+                        <div className="space-vertical" />
                         <div>
                             <h4>Medical system for using blockchain</h4>
                             <div  className="app-main-about-right-div-div-div">
-                                member : Han su young(Leader), Kim je hyoung, Park si hwan, Yoon han sol<br/><br/>
-                                description: null<br/><br/>
-                                link: <a href="https://github.com/hermes-dku/project" target="_blank">here</a>
+                                member : Han su young(Leader), Kim je hyoung, Park si hwan, Yoon han sol<br/>
+                                using stack : express, html, css, solidity<br/>
+                                short desc : 환자 중심의 병원간 의료 기록 통합 시스템<br/>
+                                <span className="app-main-about-right-div-div-div-span">
+                                    <span>link : </span>
+                                    <a href="https://github.com/hermes-dku/project" target="_blank" style={{textDecoration: 'underline'}}>source code</a>
+                                    <span>, </span>
+                                    <a href="https://github.com/yhs3434/record/tree/master/portfolio/medical%20system" target="_blank" style={{textDecoration: 'underline'}}>simple engineering</a>
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -420,7 +447,6 @@ export default function About() {
                         </div>
                     </div>
                 </div>
-
                 <div
                     id="about-tab-04"
                     className="app-main-about-right-div"
@@ -445,11 +471,18 @@ export default function About() {
                         <li id="about-tab-04-02">
                             <dl>
                                 <dt>progressive <span style={{fontWeight: 'bold'}}>web</span> app</dt>
-                                <dd><a href="https://yhs3434.github.io/yt_deploy/" target="_blank">Your think</a></dd>
+                                <dd>
+                                    <a href="https://yhs3434.github.io/yt_deploy/" target="_blank" style={{textDecoration: 'underline',}}>Your think</a>
+                                    <span> (</span>
+                                    <a href="https://github.com/yhs3434/YourThink/tree/master/web" target="_blank" style={{color: 'blue', textDecoration: 'underline',}}>client</a>
+                                    <span>, </span>
+                                    <a href="https://github.com/yhs3434/YourThink/tree/master/server_socket" target="_blank" style={{color: 'blue', textDecoration: 'underline',}}>server</a>
+                                    <span>)</span>
+                                </dd>
                                 <dd>durumi (
-                                    <a href="https://github.com/yhs3434/durumi_client" target="_blank">client</a>
+                                    <a href="https://github.com/yhs3434/durumi_client" target="_blank" style={{color: 'blue', textDecoration: 'underline',}}>client</a>
                                     <span>, </span> 
-                                    <a href="https://github.com/yhs3434/durumi_server" target="_blank">server</a>)
+                                    <a href="https://github.com/yhs3434/durumi_server" target="_blank" style={{color: 'blue', textDecoration: 'underline',}}>server</a>)
                                 </dd>
                             </dl>
                         </li>
@@ -516,32 +549,32 @@ export default function About() {
 
             <div className="app-main-about-hide about-tab-init" id="about-hide-00">
                 <ul className="app-main-about-hide-ul">
-                    <li className="app-main-about-hide-ul-li">
+                    <li className="app-main-about-hide-ul-li button-rubber">
                         <a href="#about-tab-00">
                             About
                         </a>
                     </li>
-                    <li className="app-main-about-hide-ul-li">
+                    <li className="app-main-about-hide-ul-li button-rubber">
                         <a href="#about-tab-01">
                             Edu
                         </a>
                     </li>
-                    <li className="app-main-about-hide-ul-li">
+                    <li className="app-main-about-hide-ul-li button-rubber">
                         <a href="#about-tab-02">
                             Skill
                         </a>
                     </li>
-                    <li className="app-main-about-hide-ul-li">
+                    <li className="app-main-about-hide-ul-li button-rubber">
                         <a href="#about-tab-03">
                             Project
                         </a>
                     </li>
-                    <li className="app-main-about-hide-ul-li">
+                    <li className="app-main-about-hide-ul-li button-rubber">
                         <a href="#about-tab-04">
                             Interest
                         </a>
                     </li>
-                    <li className="app-main-about-hide-ul-li">
+                    <li className="app-main-about-hide-ul-li button-rubber">
                         <a href="#about-tab-05">
                             Career
                         </a>
