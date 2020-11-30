@@ -1,12 +1,15 @@
 import React from 'react';
 import { Switch, Route, Link, useRouteMatch, useParams } from 'react-router-dom';
-import { Home, About, Diary, CustomerCenter, License } from './pages';
+import { Home, About, Diary, CustomerCenter, License, Tech, Gallery } from './pages';
 
 export default function Main(props) {
     const {start, setStart} = props;
 
     return(
         <Switch>
+            <Route exact path="/">
+                <Home start={start} setStart={setStart}/>
+            </Route>
             <Route path="/about">
                 <About />                
             </Route>
@@ -19,8 +22,11 @@ export default function Main(props) {
             <Route path="/license">
                 <License />
             </Route>
-            <Route exact path="/">
-                <Home start={start} setStart={setStart}/>
+            <Route path="/tech">
+                <Tech />
+            </Route>
+            <Route path="/gallery">
+                <Gallery />
             </Route>
         </Switch>
     )

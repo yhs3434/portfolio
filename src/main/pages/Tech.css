@@ -1,0 +1,23 @@
+.app-main-tech {
+    display: flex;
+}
+
+.app-main-tech-left {
+    flex: 0 0 auto;
+    width: 200px;
+}
+
+.app-main-tech-left-nav {
+    position: sticky;
+    top: 10px;
+}
+
+.app-main-tech-left-nav-ul {
+    line-height: 35px;
+}
+
+
+
+.app-main-tech-right {
+    flex: 1;
+}
