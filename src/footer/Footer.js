@@ -16,7 +16,7 @@ export default function Footer() {
     return(
         <div className="app-footer-total">
             <div className="app-footer-left">
-                <Link to="/" class="button-rubber">
+                <Link to="/" className="button-rubber">
                     <span className="app-footer-left-first">HANSOL</span>
                     <span className="app-footer-left-last">YOON</span>
                 </Link>

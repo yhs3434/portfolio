@@ -5,19 +5,28 @@
 .app-main-tech-left {
     flex: 0 0 auto;
     width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .app-main-tech-left-nav {
     position: sticky;
-    top: 10px;
+    top: 15px;
 }
 
 .app-main-tech-left-nav-ul {
     line-height: 35px;
 }
 
+.app-main-tech-left-nav-ul-li {
+    cursor: pointer;
+}
 
 
 .app-main-tech-right {
     flex: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
