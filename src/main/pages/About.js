@@ -266,7 +266,7 @@ export default function About() {
                             style={{display: 'flex', flexDirection: 'column', fontSize: "14px"}}
                             id="about-tab-00-01"
                         >
-                            <span>address : 경기도 용인시 처인구 금령로173번길 5</span>
+                            <span>address : 경기 수원시 팔달구 행궁로 62번길</span>
                             <span>phone # : +82-10-9099-8225</span>
                             <span>Email : yhs3434@gmail.com</span>
                         </div>
@@ -340,11 +340,11 @@ export default function About() {
                         <h3>Major</h3>
                         <div className="app-main-about-right-div-div-div">
                             <h4>frontend</h4>
-                            PWA, HTML5, CSS3, JAVASCRIPT (es6 이전, 이후 모두 가능), React, Vue
+                            pwa, html5, css3, javascript (es6 이전, 이후 모두 가능), react
                         </div>
                         <div className="app-main-about-right-div-div-div">
                             <h4>backend</h4>
-                            Websocket (ws protocol) with nodejs
+                            websocket (ws protocol) with nodejs
                         </div>
                     </div>
                     <div className="space-vertical" style={{height: '100px'}}/>
@@ -352,11 +352,11 @@ export default function About() {
                         <h3>Minor</h3>
                         <div className="app-main-about-right-div-div-div">
                             <h4>frontend</h4>
-                            Android (Java), jQuery
+                            Android (Java), jQuery, vue
                         </div>
                         <div className="app-main-about-right-div-div-div">
                             <h4>backend</h4>
-                            Django, Flask, Express, Koa, PHP
+                            Django, Flask, express, Koa, PHP
                         </div>
                     </div>
                     <div className="space-vertical" style={{height: '100px'}}/>

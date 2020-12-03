@@ -4,7 +4,7 @@ const router = express.Router();
 // mysql setup
 const mysqlLib = require('../lib/mysql');
 const conn = mysqlLib.connection();
-mysqlLib.start(conn);
+// mysqlLib.start(conn);
 const execQuery = mysqlLib.execQuery;
 
 router.get('/', (req, res, next) => {
