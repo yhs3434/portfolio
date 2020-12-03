@@ -115,7 +115,6 @@ export default function About() {
     useEffect(() => {
         const parent = document.getElementById('app-main-about-left-nav-ul-0');
         const parent2 = document.getElementById('about-hide-00');
-        console.log(parent2);
         for (let i = 0; i < parent.children.length; i++) {
             parent.children[i].children[1].className = parent.children[i].children[1].className.replace(' tab-active', '');
             parent.children[i].children[0].className = parent.children[i].children[0].className.replace(' tab-active-title', '');

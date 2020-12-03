@@ -1,0 +1,12 @@
+.app-tabcategory-wrap {
+    position: sticky;
+    top: 15px;
+}
+
+.app-tabcategory-ul {
+    line-height: 35px;
+}
+
+.app-tabcategory-ul-li-span {
+    cursor: pointer;
+}

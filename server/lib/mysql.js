@@ -30,7 +30,7 @@ const mysqlExecQuery = (conn, sql) => {
 
 const mysqlExecQueryWithValues = (conn, sql, values) => {
     return new Promise((resolve, reject) => {
-        conn.query(sql, [values], (err, rows, fields) => {
+        conn.query(sql, values, (err, rows, fields) => {
             if (err) reject(err);
             resolve(rows);
         })
