@@ -42,8 +42,9 @@ router.post('/signup', (req, res, next) => {
 // success : sign in success.
 // fail : password does not match.
 // error : etc error.
-router.get('/signin', async (req, res, next) => {
+router.post('/signin', async (req, res, next) => {
     const {email, password} = req.body;
+    console.log(req.body);
     const sql = 'SELECT password, salt FROM auth WHERE email = ?';
     const values = [email];
     try {
@@ -52,6 +53,7 @@ router.get('/signin', async (req, res, next) => {
         const saltDB = rows[0].salt;
         crypto.pbkdf2(password, saltDB, 102316, 64, 'sha512', (err, key) => {
             if (key.toString('base64') === passwordDB) {
+                res.cookie('session', 'test', {maxAge: 10000});
                 res.send({
                     status: 'success',
                     result: {}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= title %></title>
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+        <script>
+            function setCookie(key, value, expiredays) {
+                var todayDate = new Date();
+                todayDate.setDate(todayDate.getDate() + expiredays);
+                document.cookie = key + "=" + escape(value) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+            }
+        </script>
+    </head>
+    <body>
+        <h1><%= title %> page</h1>
+        <form id="auth-form">
+            <script>
+                const authFormElem = document.getElementById('auth-form');
+                authFormElem.onsubmit = (event) => {
+                    event.preventDefault();
+                    const email = document.getElementById('email').value;
+                    const password = document.getElementById('password').value;
+                    fetch("http://localhost:3001/auth/signin", {
+                        method: 'POST',
+                        mode: 'cors',
+                        cache: 'no-cache',
+                        credentials: 'same-origin',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            email, password
+                        })
+                    })
+                        .then((response) => {
+                            return response.json();
+                        })
+                        .then((data) => {
+                            const { status } = data;
+                            if (status === 'success') {
+                                setCookie('login', true, 7);
+                            }
+                        })
+                    
+                }
+            </script>
+            <div>
+                <label for="email">email : </label>
+                <input type="email" placeholder="email" id="email"/>
+            </div>
+            <div>
+                <label for="password">password : </label>
+                <input type="password" placeholder="password" id="password"/>
+            </div>
+            <div>
+                <button type="submit">sign in</button>
+            </div>
+        </form>
+    </body>
+</html>

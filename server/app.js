@@ -28,6 +28,17 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/tech', techRouter);
 app.use('/auth', authRouter);
+
+
+// admin page
+app.use((req, res, next) => {
+  if (req.url.includes('admin')) {
+    console.log(req.cookies);
+    console.log('req cookie session', req.cookies.session);
+    console.log('req cookie session2', req.cookies.session2);
+  }
+  next();
+})
 app.use('/admin', adminRouter);
 
 // catch 404 and forward to error handler

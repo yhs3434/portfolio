@@ -3,7 +3,11 @@ const router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('admin', { title: 'admin' });
+  res.send('test');
 });
+
+router.get('/signin', (req, res, next) => {
+  res.render('signin', { title: 'admin' });
+})
 
 module.exports = router;

@@ -27,4 +27,33 @@ router.get('/category', async (req, res, next) => {
     res.send(datas);
 });
 
+router.get('/detail/:id', async (req, res, next) => {
+    try {
+        const id = req.params.id;
+        const sql = 'SELECT id, title, content, category, \
+                        UNIX_TIMESTAMP(`created`) as created, \
+                        UNIX_TIMESTAMP(`changed`) as changed \
+                        FROM tech WHERE id = ' + id.toString();
+        const rows = await execQuery(conn, sql);
+        if (rows.length > 0) {
+            const row = rows[0];
+            res.send({
+                status: 'success',
+                data: row
+            });
+        } else {
+            res.send({
+                status: 'fail',
+                data: {}
+            })
+        }
+    } catch (e) {
+        res.send({
+            status: 'error',
+            data: e
+        })
+    }
+    
+})
+
 module.exports = router;
