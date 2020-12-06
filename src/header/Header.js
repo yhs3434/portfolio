@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom';
 import { Nav } from './nav/index';
 import searchIcon from '../assets/images/search.svg';
 
-export default function Header() {
+export default function Header(props) {
+    const {setTab} = props;
+
     return(
         <div className="app-header-total">
             <div className="app-header-up">
@@ -36,7 +38,7 @@ export default function Header() {
                 
             </div>
             <div className="app-header-down">
-                <Nav />
+                <Nav setTab={setTab} />
             </div>
         </div>
     )

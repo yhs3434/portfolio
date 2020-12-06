@@ -6,11 +6,12 @@ import { Main } from './main/index';
 
 function Root() {
     const [start, setStart] = useState(false);
+    const [tab, setTab] = useState('');
 
     return(
         <div className="app">
             <header className="app-header" id="app-header-00">
-                <Header />
+                <Header setTab={setTab}/>
             </header>
             <main
                 className="app-main"
@@ -19,6 +20,7 @@ function Root() {
                 <Main
                     start={start}
                     setStart={setStart}
+                    tab={tab}
                 />
             </main>
             <footer className="app-footer" id="app-footer-00">

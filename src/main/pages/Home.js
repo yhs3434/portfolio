@@ -14,7 +14,7 @@ export default function Home(props) {
                 headerElem.style.opacity = '0';
                 footerElem.style.opacity = '0';
                 headerElem.style.visibility = 'hidden';
-                footerElem.style.opacity = 'hidden';
+                footerElem.style.visibility = 'hidden';
             }
         }
         
@@ -40,7 +40,7 @@ export default function Home(props) {
     return(
         <div className="app-main-home">
             <span className="app-main-home-button" id="app-main-button-00" onClick={startClicked}>
-                <span>삶</span>과 <span>죽음</span>
+                <span>길</span>
             </span>
             <img src={brainImage} className="app-main-home-image" id="app-main-image-00"/>
         </div>

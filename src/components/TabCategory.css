@@ -1,6 +1,7 @@
 .app-tabcategory-wrap {
     position: sticky;
     top: 15px;
+    padding: 10px;
 }
 
 .app-tabcategory-ul {
