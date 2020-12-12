@@ -4,6 +4,7 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const cors = require('cors');
+const dotenv = require('dotenv');
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
@@ -12,6 +13,7 @@ const diaryRouter = require('./routes/diary');
 const authRouter = require('./routes/auth');
 const adminRouter = require('./routes/admin');
 
+dotenv.config();
 const app = express();
 
 // view engine setup

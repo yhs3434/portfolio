@@ -3,12 +3,17 @@ import { Switch, Route, Link, useRouteMatch, useParams } from 'react-router-dom'
 import { Home, About, Diary, CustomerCenter, License, Tech, Gallery, Detail, Admin } from './pages';
 
 export default function Main(props) {
-    const { start, setStart, tab } = props;
+    const { start, setStart, tab, headerRef, footerRef } = props;
 
     return(
         <Switch>
             <Route path="/" exact={true}>
-                <Home start={start} setStart={setStart}/>
+                <Home 
+                    start={start}
+                    setStart={setStart}
+                    headerRef={headerRef}
+                    footerRef={footerRef}
+                />
             </Route>
             <Route path="/about" component={About} />
             <Route path="/diary" component={() => <Diary tab={tab}/>} />

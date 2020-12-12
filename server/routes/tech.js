@@ -8,8 +8,21 @@ const conn = mysqlLib.connection();
 const execQuery = mysqlLib.execQuery;
 
 router.get('/', (req, res, next) => {
-    res.send('tech');
+    res.send('tech home');
 });
+
+router.get('/test', async (req, res, ext) => {
+    try{
+        const sql = 'select * from tech';
+        const rows = await execQuery(conn, sql);
+        
+        console.log('rows', rows);
+        res.send(rows);
+    } catch (e) {
+        console.error(e);
+        res.send(e);
+    }
+})
 
 router.get('/category', async (req, res, next) => {
     const category = req.query.q;
